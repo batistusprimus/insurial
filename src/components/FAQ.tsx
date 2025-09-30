@@ -8,15 +8,15 @@ export default function FAQ() {
   const faqs = [
     {
       question: "Is it really free?",
-      answer: "Yes, 100% free and with no obligation. We&apos;re compensated by our insurance partners only when you choose to purchase a policy, so our service costs you nothing."
+      answer: "Yes, 100% free and with no obligation. We don’t sell insurance; our goal is education and helping you understand your risk."
     },
     {
       question: "How long does it take to get a quote?",
-      answer: "Typically within 24 hours, often much faster. Our team reviews your request during business hours and matches you with the most suitable partners for quick turnaround."
+      answer: "The Risk Score takes under 5 minutes. You can then use the results to discuss coverage with your broker or preferred agent."
     },
     {
       question: "Who will contact me?",
-      answer: "A vetted insurance professional aligned with your specific request and industry. We pre-qualify all partners to ensure you receive relevant, high-quality quotes."
+      answer: "No mandatory calls. You'll receive your Risk Score by email with guidance to take next steps at your own pace."
     },
     {
       question: "How is my data handled?",
@@ -24,11 +24,11 @@ export default function FAQ() {
     },
     {
       question: "Can I refuse the quote or cancel?",
-      answer: "Absolutely. There's no obligation to purchase. You're free to review quotes, ask questions, and decide what works best for your business without any pressure."
+      answer: "Absolutely. There’s no obligation. The Risk Score is informational; you decide how to use it."
     },
     {
       question: "Do you work with all insurance companies?",
-      answer: "We partner with a curated network of reputable insurers across different markets. While not every company, we ensure broad coverage to find competitive options for your needs."
+      answer: "We’re independent and focus on education. You can share your Risk Score with any broker or carrier you prefer."
     }
   ];
 
@@ -82,20 +82,9 @@ export default function FAQ() {
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-gray-600 mb-4">
-            Still have questions?
+          <p className="text-gray-600">
+            Still have questions? Contact us at <a href="mailto:hello@insurial.info" className="text-[#1E3A8A] hover:text-blue-800 font-medium">hello@insurial.info</a>
           </p>
-          <a
-            href="https://calendly.com/bpc/15min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-[#1E3A8A] hover:text-blue-800 font-medium transition-colors"
-          >
-            Schedule a quick call
-            <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
         </div>
       </div>
     </section>

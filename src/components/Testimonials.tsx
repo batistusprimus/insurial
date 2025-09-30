@@ -1,21 +1,21 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Got 3 competitive quotes within 18 hours. The process was incredibly smooth and transparent. Saved us $2,400/year on our general liability coverage.",
+      quote: "Understood exactly what coverage we needed and why. The Risk Score made the conversation with our broker faster and clearer.",
       author: "Sarah Chen",
       title: "Operations Manager",
       company: "TechStart Solutions",
       rating: 5
     },
     {
-      quote: "Finally, an insurance process that doesn't waste time. Clear communication, fast turnaround, and exactly what we needed for our manufacturing business.",
+      quote: "No jargon, just clarity. We used the insights to prioritize coverage and avoid over‑insuring.",
       author: "Mike Rodriguez", 
       title: "Owner",
       company: "Rodriguez Manufacturing",
       rating: 5
     },
     {
-      quote: "The team understood our industry-specific needs immediately. Professional service and delivered exactly when promised.",
+      quote: "The educational guides plus the Risk Score gave us confidence to negotiate better terms.",
       author: "Jennifer Walsh",
       title: "CFO", 
       company: "Walsh Consulting Group",
@@ -24,10 +24,10 @@ export default function Testimonials() {
   ];
 
   const stats = [
-    { number: "1,247", label: "Quote requests processed last month" },
-    { number: "18h", label: "Average response time" },
+    { number: "1,247", label: "Risk Scores generated last month" },
+    { number: "5 min", label: "Average time to complete" },
     { number: "94%", label: "Customer satisfaction rate" },
-    { number: "$2.1M", label: "Average savings secured" }
+    { number: "100%", label: "Guides written in plain language" }
   ];
 
   return (

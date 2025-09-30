@@ -9,19 +9,19 @@ export default function FinalCTA({ onScrollToForm }: FinalCTAProps) {
     <section className="py-16 bg-gradient-to-r from-[#1E3A8A] to-blue-700 text-white">
       <div className="container mx-auto px-4 max-w-4xl text-center">
         <h2 className="text-3xl md:text-4xl font-archivo-black mb-4">
-          Ready to Get Your Business Protected?
+          Ready to Discover Your Business Insurance Risk Score?
         </h2>
         <p className="text-xl mb-8 text-blue-100">
-          Join 1,247+ businesses that got their insurance quotes this month.
+          Understand your coverage needs with clear, trustworthy guidance.
           <br />
-          <span className="font-semibold">Free • No obligation • Quote in &lt;24h</span>
+          <span className="font-semibold">Free • No obligation • GDPR compliant</span>
         </p>
         
         <button
           onClick={onScrollToForm}
           className="bg-white text-[#1E3A8A] hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl mb-6"
         >
-          Request My Free Quote Now
+          Get My Free Risk Score
         </button>
         
         <div className="flex items-center justify-center space-x-6 text-sm text-blue-200">

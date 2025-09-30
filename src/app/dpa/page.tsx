@@ -17,7 +17,7 @@ export default function DPAPage() {
             </p>
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none article-content">
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
               <h2 className="text-xl font-semibold text-gray-900 mb-2">For Business Customers</h2>
               <p className="text-gray-700">

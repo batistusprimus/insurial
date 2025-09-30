@@ -17,7 +17,7 @@ export default function TermsPage() {
             </p>
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none article-content">
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Agreement to Terms</h2>
             <p className="mb-6">
               By accessing and using Insurial.info ("the Service"), you agree to be bound by these Terms of Service 

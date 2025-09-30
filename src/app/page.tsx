@@ -2,8 +2,9 @@
 
 import { useRef } from 'react';
 import Hero from '@/components/Hero';
-import LeadForm from '@/components/LeadForm';
-import Guides from '@/components/Guides';
+import ValueProposition from '@/components/ValueProposition';
+import KeyBenefits from '@/components/KeyBenefits';
+import SimpleRiskForm from '@/components/SimpleRiskForm';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
@@ -19,18 +20,21 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section - headline + sub-headline + CTA */}
       <Hero onScrollToForm={scrollToForm} />
       
-      {/* Lead Form */}
+      {/* Value Proposition - problème / solution */}
+      <ValueProposition />
+      
+      {/* Key Benefits - 3-4 blocs d'avantages */}
+      <KeyBenefits />
+      
+      {/* CTA Section - Risk Score Form */}
       <div ref={formRef}>
-        <LeadForm />
+        <SimpleRiskForm />
       </div>
       
-      {/* Information Guides */}
-      <Guides />
-      
-      {/* How It Works */}
+      {/* How It Works - 3 étapes */}
       <HowItWorks />
       
       {/* Social Proof & Testimonials */}

@@ -134,7 +134,7 @@ export default function LeadForm() {
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      setErrors({ submit: 'Une erreur est survenue. Veuillez réessayer.' });
+      setErrors({ submit: 'An error occurred. Please try again.' });
     } finally {
       setIsSubmitting(false);
     }

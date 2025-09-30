@@ -1,54 +1,41 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Archivo_Black } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
-const archivoBlack = Archivo_Black({
-  weight: "400",
-  variable: "--font-archivo-black",
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
+const archivoBlack = Archivo_Black({ weight: ["400"], subsets: ["latin"], variable: "--font-archivo-black" });
 
 export const metadata: Metadata = {
-  title: "Insurial - Get a clear business insurance overview and request a tailored quote in <24h",
-  description: "Free business insurance quotes for SMBs & mid-market. No obligation, fast response <24h. GDPR compliant.",
-  keywords: "business insurance, commercial insurance, liability insurance, property insurance, SMB insurance",
-  icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
-  },
+  title: "Insurial – Business Insurance Education + Free Risk Score",
+  description: "Clear, trustworthy education on business insurance for US companies. Get your free Business Insurance Risk Score based on industry, size, location, and revenue.",
+  keywords: "business insurance, education, risk score, general liability, workers compensation, commercial property, commercial auto, BOP",
+  robots: "index, follow",
   openGraph: {
-    title: "Insurial - Business Insurance Quotes in <24h",
-    description: "Get a personalized business insurance quote in <24h. Free, no obligation, GDPR compliant.",
+    title: "Insurial – Business Insurance Education + Free Risk Score",
+    description: "Understand your insurance needs with clear, trustworthy resources. Get your free Business Insurance Risk Score.",
     url: "https://insurial.info",
     siteName: "Insurial",
+    locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: '/logo.png',
-        width: 1200,
-        height: 630,
-        alt: 'Insurial Logo',
-      },
-    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Insurial – Business Insurance Education + Free Risk Score",
+    description: "Get your free Business Insurance Risk Score and understand your insurance needs.",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${archivoBlack.variable} ${montserrat.variable} font-montserrat antialiased`}
-      >
+      <body className={`${inter.className} ${montserrat.variable} ${archivoBlack.variable}`}>
+        <Header />
         {children}
       </body>
     </html>

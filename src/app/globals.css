@@ -33,3 +33,54 @@ body {
 .font-montserrat {
   font-family: var(--font-montserrat);
 }
+
+/* Blog article readable content */
+.article-content {
+  color: #111827; /* gray-900 */
+}
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6,
+.article-content p,
+.article-content li,
+.article-content blockquote {
+  color: #111827; /* force high contrast */
+}
+.article-content a {
+  color: #1E3A8A;
+  text-decoration: underline;
+}
+.article-content ul,
+.article-content ol {
+  padding-left: 1.25rem;
+}
+.article-content p {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Keep article text dark when backgrounds are explicitly white */
+  .article-content,
+  .article-content h1,
+  .article-content h2,
+  .article-content h3,
+  .article-content h4,
+  .article-content h5,
+  .article-content h6,
+  .article-content p,
+  .article-content li,
+  .article-content blockquote {
+    color: #111827;
+  }
+}
+
+/* Strong overrides to ensure readability regardless of inherited styles */
+.article-content,
+.article-content * {
+  color: #111827 !important; /* gray-900 */
+  opacity: 1 !important;
+}

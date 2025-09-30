@@ -4,13 +4,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div>
             <h3 className="text-2xl font-archivo-black text-white mb-4">
               Insurial
             </h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Get a clear business insurance overview and request a tailored quote in &lt;24h. 
-              Free, no obligation, GDPR compliant.
+              Get clear, trustworthy business insurance guidance and your free Risk Score.
+              We don’t sell insurance. Free, no obligation, GDPR compliant.
             </p>
             <div className="flex items-center space-x-4 text-sm">
               <span className="flex items-center">
@@ -28,50 +28,83 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Navigation */}
+          <div>
+            <h4 className="font-semibold text-white mb-4">Navigation</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/" className="hover:text-white transition-colors">Home</a>
+              </li>
+              <li>
+                <a href="/how-it-works" className="hover:text-white transition-colors">How It Works</a>
+              </li>
+              <li>
+                <a href="/about" className="hover:text-white transition-colors">About</a>
+              </li>
+              <li>
+                <a href="/#risk-score-form" className="hover:text-white transition-colors">Risk Score</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Insurance Types */}
+          <div>
+            <h4 className="font-semibold text-white mb-4">Insurance</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/insurance/general-liability" className="hover:text-white transition-colors">General Liability</a>
+              </li>
+              <li>
+                <a href="/insurance/workers-compensation" className="hover:text-white transition-colors">Workers’ Compensation</a>
+              </li>
+              <li>
+                <a href="/insurance/commercial-property" className="hover:text-white transition-colors">Commercial Property</a>
+              </li>
+              <li>
+                <a href="/insurance/commercial-auto" className="hover:text-white transition-colors">Commercial Auto</a>
+              </li>
+              <li>
+                <a href="/insurance/business-owners-policy" className="hover:text-white transition-colors">Business Owner’s Policy</a>
+              </li>
+            </ul>
+          </div>
+
           {/* Legal Links */}
           <div>
             <h4 className="font-semibold text-white mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/privacy" className="hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
+                <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
               </li>
               <li>
-                <a href="/terms" className="hover:text-white transition-colors">
-                  Terms of Service
-                </a>
+                <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
               </li>
               <li>
-                <a href="/dpa" className="hover:text-white transition-colors">
-                  Data Processing Agreement
-                </a>
+                <a href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</a>
+              </li>
+              <li>
+                <a href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</a>
+              </li>
+              <li>
+                <a href="/legal" className="hover:text-white transition-colors">Legal Information</a>
+              </li>
+              <li>
+                <a href="/cookie-settings" className="hover:text-white transition-colors">Cookie Settings</a>
+              </li>
+              <li>
+                <a href="/dpa" className="hover:text-white transition-colors">Data Processing Agreement</a>
               </li>
             </ul>
           </div>
-
+          
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-white mb-4">Support</h4>
             <ul className="space-y-2">
               <li>
-                <a 
-                  href="https://calendly.com/bpc/15min" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  Schedule a Call
-                </a>
+                <a href="mailto:hello@insurial.info" className="hover:text-white transition-colors">hello@insurial.info</a>
               </li>
-              <li>
-                <a href="mailto:hello@insurial.info" className="hover:text-white transition-colors">
-                  hello@insurial.info
-                </a>
-              </li>
-              <li className="text-sm text-gray-400">
-                Response within 4h
-              </li>
+              <li className="text-sm text-gray-400">Response within 4h</li>
             </ul>
           </div>
         </div>

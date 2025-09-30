@@ -2,21 +2,21 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "1",
-      title: "You Submit",
-      description: "Complete our simple 4-step form with your business details and coverage needs. Takes less than 3 minutes.",
-      icon: "📝"
+      title: "Get Your Risk Score",
+      description: "Answer a few questions (industry, size, ZIP, revenue). Takes under 5 minutes.",
+      icon: "📊"
     },
     {
       number: "2", 
-      title: "We Qualify",
-      description: "Our team reviews your request and matches you with pre-vetted insurance partners suited to your industry and needs.",
+      title: "Receive Guidance",
+      description: "We send your Risk Score with plain‑English guidance and relevant resources.",
       icon: "🔍"
     },
     {
       number: "3",
-      title: "You Receive",
-      description: "Get your tailored quote within 24 hours via email, with clear explanations and next steps if you're interested.",
-      icon: "📧"
+      title: "Take Action",
+      description: "Use your insights to discuss coverage and budgets with your broker or preferred agent.",
+      icon: "🎯"
     }
   ];
 
@@ -64,7 +64,7 @@ export default function HowItWorks() {
         <div className="text-center mt-12">
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 inline-block">
             <p className="text-sm text-[#1E3A8A] font-medium">
-              ✓ Email and phone verification included • Quote delivery within 24h guaranteed
+              ✓ Free • No obligation • GDPR compliant
             </p>
           </div>
         </div>

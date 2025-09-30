@@ -17,7 +17,7 @@ export default function PrivacyPage() {
             </p>
           </div>
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none article-content">
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Who We Are</h2>
             <p className="mb-6">
               Insurial is operated by <strong>BPC Group</strong>, a data controller committed to protecting your privacy. 

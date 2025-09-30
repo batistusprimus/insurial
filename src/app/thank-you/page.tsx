@@ -14,13 +14,13 @@ export default function ThankYouPage() {
 
           {/* Main Message */}
           <h1 className="text-3xl md:text-4xl font-archivo-black text-gray-900 mb-4">
-            Request Received!
+            Thanks! Your Risk Score request is in.
           </h1>
           
           <p className="text-lg text-gray-600 mb-8">
-            Thanks! Your request has been received. 
+            You’ll receive an email confirmation shortly.
             <br />
-            <strong className="text-[#1E3A8A]">You'll get your quote within 24h.</strong>
+            <strong className="text-[#1E3A8A]">Your Business Insurance Risk Score will be delivered within a few days.</strong>
           </p>
 
           {/* Next Steps */}
@@ -29,15 +29,15 @@ export default function ThankYouPage() {
             <div className="text-left space-y-3 text-sm text-gray-600">
               <div className="flex items-start">
                 <span className="bg-[#1E3A8A] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center mr-3 mt-0.5 font-semibold">1</span>
-                <span>We review your request and match you with suitable insurance partners</span>
+                <span>We review your information to generate your Risk Score</span>
               </div>
               <div className="flex items-start">
                 <span className="bg-[#1E3A8A] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center mr-3 mt-0.5 font-semibold">2</span>
-                <span>You'll receive a personalized quote via email within 24h</span>
+                <span>You’ll receive your Risk Score with guidance and educational resources</span>
               </div>
               <div className="flex items-start">
                 <span className="bg-[#1E3A8A] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center mr-3 mt-0.5 font-semibold">3</span>
-                <span>A qualified agent will contact you to discuss your options (if you choose)</span>
+                <span>Optional: browse our guides to clarify your next steps</span>
               </div>
             </div>
           </div>
@@ -45,17 +45,18 @@ export default function ThankYouPage() {
           {/* CTA Options */}
           <div className="space-y-4">
             <a
-              href="https://calendly.com/bpc/15min"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/guides/renewal-checklist"
               className="inline-block bg-[#1E3A8A] hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl mr-4"
             >
-              Schedule a Quick Call
+              Review the Renewal Checklist
             </a>
             
-            <button className="inline-block border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
-              Download the 2-Page Guide
-            </button>
+            <a
+              href="/guides/premium-calculation"
+              className="inline-block border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+            >
+              Understand Premium Calculation
+            </a>
           </div>
 
           {/* Trust Signals */}
