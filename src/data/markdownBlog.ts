@@ -35,7 +35,7 @@ function simpleMarkdownToHtml(md: string): string {
   html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
   // Lists (very simple)
   html = html.replace(/(^|\n)-\s+(.+)(?=\n|$)/g, '$1<li>$2</li>');
-  html = html.replace(/(<li>.*<\/li>)(\s*(<li>.*<\/li>))+?/gs, match => `<ul>${match}</ul>`);
+  html = html.replace(/(<li>[\s\S]*?<\/li>)(\s*(<li>[\s\S]*?<\/li>))+?/g, match => `<ul>${match}</ul>`);
   // Paragraphs: wrap double line breaks
   html = html.split(/\n\n+/).map(block => {
     if (block.match(/^<h[1-3]>/)) return block; // leave headings
