@@ -2,12 +2,9 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPostBySlug, getRelatedArticles } from '@/data/allBlogPosts';
 
-interface PageProps {
-  params: { slug: string };
-}
-
-export async function generateMetadata({ params }: PageProps) {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return {};
   return {
     title: `${post.title} - Insurial`,
@@ -20,8 +17,9 @@ function formatDate(dateStr: string): string {
   return d.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-export default function BlogPostPage({ params }: PageProps) {
-  const post = getPostBySlug(params.slug);
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return notFound();
 
   const related = getRelatedArticles(post.slug, post.category, 3);
