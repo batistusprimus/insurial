@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export const metadata = {
   title: "About Insurial - Mission and Credibility",
@@ -201,12 +202,12 @@ export default function AboutPage() {
             <p className="text-xl text-blue-100 mb-8">
               Discover your coverage needs in under 5 minutes and connect with the right carriers.
             </p>
-          <a 
+          <Link 
             href="/#risk-score-form" 
             className="bg-white text-[#1E3A8A] font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-200 inline-block"
           >
             Start My Free Assessment
-          </a>
+          </Link>
         </div>
       </section>
 

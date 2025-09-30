@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
@@ -33,16 +35,16 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Navigation</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-white transition-colors">Home</a>
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <a href="/how-it-works" className="hover:text-white transition-colors">How It Works</a>
+                <Link href="/how-it-works" className="hover:text-white transition-colors">How It Works</Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-white transition-colors">About</a>
+                <Link href="/about" className="hover:text-white transition-colors">About</Link>
               </li>
               <li>
-                <a href="/#risk-score-form" className="hover:text-white transition-colors">Risk Score</a>
+                <Link href="/#risk-score-form" className="hover:text-white transition-colors">Risk Score</Link>
               </li>
             </ul>
           </div>
@@ -52,19 +54,19 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Insurance</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/insurance/general-liability" className="hover:text-white transition-colors">General Liability</a>
+                <Link href="/insurance/general-liability" className="hover:text-white transition-colors">General Liability</Link>
               </li>
               <li>
-                <a href="/insurance/workers-compensation" className="hover:text-white transition-colors">Workers’ Compensation</a>
+                <Link href="/insurance/workers-compensation" className="hover:text-white transition-colors">Workers’ Compensation</Link>
               </li>
               <li>
-                <a href="/insurance/commercial-property" className="hover:text-white transition-colors">Commercial Property</a>
+                <Link href="/insurance/commercial-property" className="hover:text-white transition-colors">Commercial Property</Link>
               </li>
               <li>
-                <a href="/insurance/commercial-auto" className="hover:text-white transition-colors">Commercial Auto</a>
+                <Link href="/insurance/commercial-auto" className="hover:text-white transition-colors">Commercial Auto</Link>
               </li>
               <li>
-                <a href="/insurance/business-owners-policy" className="hover:text-white transition-colors">Business Owner’s Policy</a>
+                <Link href="/insurance/business-owners-policy" className="hover:text-white transition-colors">Business Owner’s Policy</Link>
               </li>
             </ul>
           </div>
@@ -74,25 +76,25 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+                <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
               </li>
               <li>
-                <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+                <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
               </li>
               <li>
-                <a href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</a>
+                <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
               </li>
               <li>
-                <a href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</a>
+                <Link href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
               </li>
               <li>
-                <a href="/legal" className="hover:text-white transition-colors">Legal Information</a>
+                <Link href="/legal" className="hover:text-white transition-colors">Legal Information</Link>
               </li>
               <li>
-                <a href="/cookie-settings" className="hover:text-white transition-colors">Cookie Settings</a>
+                <Link href="/cookie-settings" className="hover:text-white transition-colors">Cookie Settings</Link>
               </li>
               <li>
-                <a href="/dpa" className="hover:text-white transition-colors">Data Processing Agreement</a>
+                <Link href="/dpa" className="hover:text-white transition-colors">Data Processing Agreement</Link>
               </li>
             </ul>
           </div>
