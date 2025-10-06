@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat, Archivo_Black } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import RotatingRiskBadge from "@/components/RotatingRiskBadge";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
@@ -12,6 +13,11 @@ export const metadata: Metadata = {
   description: "Clear, trustworthy education on business insurance for US companies. Get your free Business Insurance Risk Score based on industry, size, location, and revenue.",
   keywords: "business insurance, education, risk score, general liability, workers compensation, commercial property, commercial auto, BOP",
   robots: "index, follow",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     title: "Insurial – Business Insurance Education + Free Risk Score",
     description: "Understand your insurance needs with clear, trustworthy resources. Get your free Business Insurance Risk Score.",
@@ -37,6 +43,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${montserrat.variable} ${archivoBlack.variable}`}>
         <Header />
         {children}
+        <RotatingRiskBadge />
       </body>
     </html>
   );

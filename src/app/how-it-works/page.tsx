@@ -1,5 +1,6 @@
 import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
+import TechLogos from '@/components/TechLogos';
 
 export const metadata = {
   title: 'How It Works - Insurial',
@@ -15,6 +16,7 @@ export default function HowItWorksPage() {
           <p className="text-lg text-gray-600">A simple, transparent process to understand your risks and make informed decisions.</p>
         </div>
       </section>
+      <TechLogos />
       <HowItWorks />
       <Footer />
     </div>

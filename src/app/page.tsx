@@ -10,6 +10,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
+import PressLogos from '@/components/PressLogos';
 
 export default function Home() {
   const formRef = useRef<HTMLDivElement>(null);
@@ -22,6 +23,9 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section - headline + sub-headline + CTA */}
       <Hero onScrollToForm={scrollToForm} />
+      
+      {/* Press logos */}
+      <PressLogos />
       
       {/* Value Proposition - problème / solution */}
       <ValueProposition />

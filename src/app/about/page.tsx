@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import SummitsLogos from '@/components/SummitsLogos';
 
 export const metadata = {
   title: "About Insurial - Mission and Credibility",
@@ -22,6 +23,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Summits Logos */}
+      <SummitsLogos />
 
       {/* Mission Statement */}
       <section className="py-16 bg-white">
