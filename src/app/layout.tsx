@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   keywords: "business insurance, education, risk score, general liability, workers compensation, commercial property, commercial auto, BOP",
   robots: "index, follow",
   icons: {
-    icon: "/Design sans titre (29).png",
-    shortcut: "/Design sans titre (29).png",
-    apple: "/Design sans titre (29).png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "Insurial – Business Insurance Education + Free Risk Score",
