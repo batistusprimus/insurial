@@ -3,6 +3,7 @@ import { Inter, Montserrat, Archivo_Black } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import RotatingRiskBadge from "@/components/RotatingRiskBadge";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Header />
         {children}
         <RotatingRiskBadge />
+        <Analytics />
       </body>
     </html>
   );
