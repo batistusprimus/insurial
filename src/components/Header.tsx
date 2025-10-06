@@ -19,7 +19,7 @@ export default function Header() {
             <img 
               src="/logo.png" 
               alt="Insurial Logo" 
-              className="h-8 md:h-10"
+              className="h-16 md:h-20"
             />
           </Link>
 
