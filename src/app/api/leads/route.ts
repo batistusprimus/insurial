@@ -11,6 +11,7 @@ interface LeadData {
   // Step 2 - Profile  
   companySize: string;
   industry: string;
+  insuranceTopic?: string; // optional from SimpleRiskForm
   currentProvider: string;
   
   // Step 3 - Contact
@@ -69,6 +70,7 @@ export async function POST(request: NextRequest) {
       email: enrichedData.workEmail,
       company: enrichedData.fullName,
       coverage: enrichedData.coverageType,
+      insuranceTopic: enrichedData.insuranceTopic,
       location: enrichedData.location,
       timestamp: enrichedData.timestamp,
       utm: {

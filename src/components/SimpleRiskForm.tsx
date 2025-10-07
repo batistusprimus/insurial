@@ -9,6 +9,7 @@ interface FormData {
   phone: string;
   zipCode: string;
   industry: string;
+  insuranceTopic?: string; // optional educational intent
   companySize: string;
   annualRevenue: string;
   gdprConsent: boolean;
@@ -21,6 +22,7 @@ const initialFormData: FormData = {
   phone: '',
   zipCode: '',
   industry: '',
+  insuranceTopic: '',
   companySize: '',
   annualRevenue: '',
   gdprConsent: false,
@@ -222,6 +224,26 @@ export default function SimpleRiskForm() {
                 <option value="Other">Other</option>
               </select>
               {errors.industry && <p className="text-red-600 text-sm mt-1">{errors.industry}</p>}
+            </div>
+
+            {/* Insurance topic to better understand (optional) */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                6b. Which insurance topic would you like to better understand? (optional)
+              </label>
+              <select
+                value={formData.insuranceTopic || ''}
+                onChange={(e) => updateFormData('insuranceTopic', e.target.value)}
+                className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent text-gray-900"
+              >
+                <option value="">Select a topic (optional)</option>
+                <option value="General Liability">General Liability</option>
+                <option value="Workers’ Compensation">Workers’ Compensation</option>
+                <option value="Commercial Property">Commercial Property</option>
+                <option value="Commercial Auto">Commercial Auto</option>
+                <option value="Business Owner’s Policy (BOP)">Business Owner’s Policy (BOP)</option>
+                <option value="Not sure / Other">Not sure / Other</option>
+              </select>
             </div>
 
             {/* Company Size & Annual Revenue - Side by side */}
